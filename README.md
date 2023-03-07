@@ -8,6 +8,11 @@
 - Wacom: 
 - Logitech: 
 
+## General
+- Chrome: https://www.google.com/chrome/
+- Discord: https://discord.com/download
+- Lightroom
+
 ## Utility & Monitoring
 - Screenpresso: https://www.screenpresso.com/fr/telecharger/
 - HWMonitor: https://www.cpuid.com/softwares/hwmonitor.html
