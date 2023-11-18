@@ -1,0 +1,15 @@
+testfunction(){
+  echo $1
+}
+
+
+
+
+alias ll = "ls -l"
+alias lla = "ll -a"
+
+alias gits = "git status"
+alias gita = "git add ."
+alias gitm = "git commit -m"
+alias gitco = "git checkout"
+alias gitb = "git branch"
