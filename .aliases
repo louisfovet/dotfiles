@@ -1,15 +1,10 @@
-testfunction(){
-  echo $1
-}
+alias ll="ls -l"
+alias lla="ll -a"
+alias wk="~/Documents/workspace"
+alias dot="~/Documents/dotfiles"
 
-
-
-
-alias ll = "ls -l"
-alias lla = "ll -a"
-
-alias gits = "git status"
-alias gita = "git add ."
-alias gitm = "git commit -m"
-alias gitco = "git checkout"
-alias gitb = "git branch"
+alias gits="git status"
+alias gita="git add ."
+alias gitc="git commit -m"
+alias gitco="git checkout"
+alias gitb="git branch"

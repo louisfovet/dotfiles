@@ -1,0 +1,18 @@
+dupf(){
+  if [ $# -eq 1 ]; then
+    cp $1 ${1}.backup
+    vi $1
+  else
+    echo "Use only 1 arg (base file), dumbass !"
+  fi
+}
+
+gitm(){
+  if [ $# -eq 1 ]; then
+    git add .
+    git commit -m $1
+    git push 
+  else
+    echo "Use only 1 arg (commit message), dumbass !"
+  fi
+}
