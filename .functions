@@ -16,3 +16,12 @@ gitm(){
     echo "Use only 1 arg (commit message), dumbass !"
   fi
 }
+
+dockerd(){
+  if [ $# -eq 1 ]; then
+    echo "\n##### BUILDING DOCKER IMAGE #####"
+    docker build -t $1 .
+    echo "\n##### RUNNING CONTAINER #####"
+    docker run $1
+  fi
+}
