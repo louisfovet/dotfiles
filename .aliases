@@ -1,5 +1,5 @@
 alias ll="ls -l"
-alias lla="ll -a"
+alias la="ll -a"
 alias wk="~/Documents/workspace"
 alias dot="~/Documents/dotfiles"
 
@@ -9,3 +9,5 @@ alias gitc="git commit -m"
 alias gitco="git checkout"
 alias gitb="git branch"
 alias gitl="git log"
+
+alias dockerclean="echo y | docker container prune && docker images | egrep \"^<none>\" | awk '{print $3}' | xargs docker image rm"
