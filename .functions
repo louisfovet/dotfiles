@@ -23,5 +23,16 @@ dockerd(){
     docker build -t $1 .
     echo "\n##### RUNNING CONTAINER #####"
     docker run $1
+  else
+    echo "Use only 1 arg (commit message), dumbass !"
   fi
+}
+
+jupyter(){
+  docker ps | grep -q jupyter
+  if [ $? -eq 1 ]; then
+    docker run --detach -p 8888:8888 --rm --name jupyter jupyter/tensorflow-notebook:latest
+    sleep 5 
+  fi
+  docker logs jupyter 2>&1 | egrep "127.0.0.1" | grep -v "ServerApp" | awk '{print $1}' | xargs open -a Safari  
 }
