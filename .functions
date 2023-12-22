@@ -24,7 +24,7 @@ dockerd(){
     echo "\n##### RUNNING CONTAINER #####"
     docker run $1
   else
-    echo "Use only 1 arg (commit message), dumbass !"
+    echo "Use only 1 arg (image name), dumbass !"
   fi
 }
 

@@ -13,3 +13,10 @@ alias gitb="git branch"
 alias gitl="git log"
 
 alias dockerc="echo y | docker container prune && docker images | egrep \"^<none>\" | awk '{print $3}' | xargs docker image rm"
+alias k3s="sudo docker run \
+  --privileged \
+  --name k3s-server-1 \
+  --hostname k3s-server-1 \
+  -p 6443:6443 \
+  -d rancher/k3s:v1.24.10-k3s1 \
+  server"
